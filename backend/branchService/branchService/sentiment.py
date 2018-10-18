@@ -4,8 +4,7 @@
 
 from aylienapiclient import textapi
 
-app_id = ""
-app_key = ""
+from .secret import app_id, app_key
 sentiment_client = textapi.Client(app_id, app_key)
 
 def analysis_sentiment(text):

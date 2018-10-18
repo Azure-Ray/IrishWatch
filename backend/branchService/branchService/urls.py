@@ -18,6 +18,7 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
+    path('', views.index),
     path('parse/', views.parse),
     path('speech/', views.speech),
     path('admin/', admin.site.urls),
